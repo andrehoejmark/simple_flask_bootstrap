@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Simple flask</title>
+        <link rel="stylesheet" href="" />
+</head>
+
+<style>
+        .add_city {
+                margin-top: 40px;
+                margin-left: 400px;
+        }
+        
+
+</style>
+
+
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Simple flask    |    </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/andrehoejmark">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="container">
+                <center> <h1> <br>What's the weather like? </h1> </center>
+                
+                <div class="add_city">
+                        <form method="POST">
+                                <div class="row"> 
+                                        
+                                        <div class="col-3">  <input class="input" name="city" type="text" placeholder="City name"> </input></div>
+                                        <div class="col-6"> <button class="button is-info" type="submit">Current temperature</button></div>
+                                        
+                                </div>
+                        </form>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        
+                        <div class="row">
+                                <div class="col-1"> City: </div>  
+                                <div class="col-2"> {{ weather.city }} </div>
+                        </div>
+                        
+                        <div class="row">
+                                <div class="col-1"> Temp: </div>  
+                                <div class="col-2"> {{ weather.temperature }}°c </div>
+                        </div>
+                        
+                        <div class="row">
+                                <div class="col-1"> Desc: </div>  
+                                <div class="col-2"> {{ weather.description }} </div>
+                        </div>
+                </div>
+                
+                
+                
+        </div>
+
+        
+        
+    
+        
+        
+        
+        
+        
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
